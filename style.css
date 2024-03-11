@@ -2,3 +2,7 @@
     width: 20px;
     height: auto;
 }
+
+main p {
+    color: black; /* Textfarbe im Kasten auf Schwarz ändern */
+}

@@ -11,12 +11,12 @@
             line-height: 1.2;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #30553e;
+            background-color: black; /* Hintergrundfarbe auf Schwarz ändern */
+            color: white; /* Textfarbe auf Weiß ändern */
         }
         /* Stile für die Navigationsleiste */
         nav {
-            background-color: #30553e;
+            background-color: #272727;
             padding: 5px;
             text-align: center;
         }
@@ -30,17 +30,15 @@
             margin-right: 20px;
         }
         nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
+    color: rgb(255, 255, 255); /* Textfarbe auf Weiß ändern */
+    text-decoration: none;
+    font-weight: bold;
         }
-        nav ul li a:hover {
-            color: #ffd700; /* Farbe ändern, wenn der Link hervorgehoben wird */
-        }
+       
         /* Stile für den Header */
         header {
             background-color: #30553e;
-            color: #fff;
+            color: #ffffffc7;
             padding: 10px;
             text-align: center;
             display: flex;
@@ -49,21 +47,23 @@
             width: 100%;
             margin-left: -10px;
         }
-        header img {
+        /*header img {
             width: 150px;
             margin-right: 10px;
-        }  
+        }  */
         main {
             padding: 20px;
         }
         main p:first-child {
-            margin-top: 70px;
+            margin-top: 50px;
         }
         main img {
             max-width: 90%;
             height: auto;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
+            margin-top: 20px;
         }
+
         .image-container {
             display: flex;
             justify-content: space-between;
@@ -89,33 +89,60 @@
         </ul>
     </nav>
 
-    <!-- Header -->
-    <div style="display: flex; align-items: center;">
-        <img src="header 2.png" alt="Beschreibung des Bildes" width="100" height="auto">
-        <h1 style="margin-left: 20px;">Dokumentation</h1>
-    </div>
+  <!-- Header -->
+<div style="display: flex; align-items: center;">
+    <img src="hauptbild.png" alt="Beschreibung des Bildes" style="width: 100%;">
+</div>
 
     <!-- Hauptinhalt -->
     <main>
-        <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+        <p style="margin-bottom: 250px; background-color: #fffdfd; color: rgb(0, 0, 0); padding: 20px; width: 94%; height: auto;">
+            Mit dieser Website will ich meine 
+            Arbeiten, die im Laufe des ersten 
+            Semesters entstanden sind, präsentieren und erklären wie sie funktionieren.
+        </p>
 		
         <section id="section1">
             <h2>Projekt 1</h2>
             <h3>Brush Drawing Tool (little tools)</h3>
-            <p>Hier kannst du deine Dokumentation für Abschnitt 1 einfügen.</p>
+            <p>Der gegebene HTML-Code erstellt eine einfache Webseite für ein Zeichenwerkzeug mit einer Canvas-Anzeige. Hier ist der dazugehörige code:</p>
 			<img src="index.png" alt="Beschreibung deines Bildes">
-			<p>aaa</p>
+            <p>Zusammenfassend wird hier eine einfache HTML-Datei erstellt, die eine Canvas-Anzeige für ein Zeichenwerkzeug bereitstellt. Die tatsächliche Interaktivität und das Zeichenwerkzeug werden in der JavaScript-Datei "sketch.js" implementiert, während das Erscheinungsbild der Seite in der CSS-Datei "style.css" gesteuert wird.</p>
+			
 			<img src="sketch.png" alt="Beschreibung deines Bildes">
-			<p>aaa</p>
+            <p>
+                Dieser Code implementiert ein einfaches Zeichenwerkzeug in JavaScript mithilfe der p5.js-Bibliothek.
+                
+                <!--  <p>Variableninitialisierung:</p> 
+                
+            <p>brushSize: Die Größe des Pinsels, standardmäßig auf 10 gesetzt.
+                currentBrush: Die aktuelle Pinselart, standardmäßig auf 'circle' (Kreis) gesetzt.</p> 
+               
+                <p>Überprüft, ob die Maustaste gedrückt ist (mouseIsPressed).
+                    Zeichnet je nach aktueller Pinselart (currentBrush) entweder einen Kreis oder ein Quadrat an der Position des Mauszeigers (mouseX, mouseY) mit der Größe brushSize.</p>
+                <p>keyPressed():
+                
+                    Wird aufgerufen, wenn eine Taste gedrückt wird.
+                    Ändert die Pinselgröße mithilfe der Pfeiltasten nach oben (UP_ARROW) und unten (DOWN_ARROW). Die Pinselgröße wird um 5 Pixel erhöht oder verringert, wenn die Mindestgröße von 5 nicht unterschritten wird.
+                   </p>  
+                   
+                   <p>Funktion mouseClicked():
+                
+                    Wird aufgerufen, wenn die Maus geklickt wird.
+                    Ändert die Pinselart zwischen Kreis und Quadrat, indem der Wert von currentBrush umgeschaltet wird.</p> -->
+                    
+               <p> Zusammenfassend ermöglicht dieser Code das Zeichnen von Kreisen und Quadraten auf einer Canvas-Anzeige mit der Maus. Die Pinselgröße kann mit den Pfeiltasten angepasst werden, und die Pinselart kann durch einen Mausklick gewechselt werden.</p>
+
+			<p>Dieser CSS-Code definiert das Aussehen und Layout der HTML-Elemente auf einer Webseite.</p>
 			<img src="style.png" alt="Beschreibung deines Bildes">
-			<p>aaa</p>
+			<p>Zusammenfassend wird der gesamte Inhalt der Webseite zentriert auf der Seite dargestellt, und ein Container mit einer schwarzen Umrandung dient wahrscheinlich dazu, den Zeichenbereich (Canvas) auf der Seite visuell zu markieren. </p>
 			<div class="image-container">
 				<img src="little tools.png" alt="Beschreibung deines Bildes">
 				<img src="little tools 1.png" alt="Beschreibung deines Bildes">
 				<img src="little tools 2.png" alt="Beschreibung deines Bildes">
 			</div>
         </section>
-	
+
         <section id="section2">
             <h2>Projekt 2</h2>
             <h3>Pain Mat(t)e</h3>
