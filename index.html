@@ -11,7 +11,7 @@
             line-height: 1.2;
             margin: 0;
             padding: 0;
-            background-color: black; /* Hintergrundfarbe auf Schwarz ändern */
+            background-color: rgb(41, 41, 41); /* Hintergrundfarbe auf Schwarz ändern */
             color: white; /* Textfarbe auf Weiß ändern */
         }
         /* Stile für die Navigationsleiste */
@@ -37,7 +37,7 @@
        
         /* Stile für den Header */
         header {
-            background-color: #30553e;
+            background-color: #ffffff;
             color: #ffffffc7;
             padding: 10px;
             text-align: center;
@@ -58,10 +58,17 @@
             margin-top: 50px;
         }
         main img {
-            max-width: 90%;
+            max-width: 95%;
             height: auto;
             margin-bottom: 20px;
             margin-top: 20px;
+        }
+      
+        main p {
+            padding: 20px; /* Fügt 10px Padding um den Text herum hinzu */
+        }
+        main img {
+            padding: 20px; /* Fügt 10px Padding um das Bild herum hinzu */
         }
 
         .image-container {
@@ -69,11 +76,11 @@
             justify-content: space-between;
         }
         .image-container img {
-            width: 30%;
+            width: 45%;
         }
         /* Gestrichelte Linie */
         section:not(:last-child) {
-            border-bottom: 1px dashed #30553e;
+            border-bottom: 1px dashed #394d41;
             margin-bottom: 20px;
             padding-bottom: 20px;
         }
@@ -86,6 +93,7 @@
             <li><a href="#section1">Projekt 1</a></li>
             <li><a href="#section2">Projekt 2</a></li>
             <li><a href="#section3">Projekt 3</a></li>
+            <li><a href="#section4">Fazit</a></li>
         </ul>
     </nav>
 
@@ -96,7 +104,7 @@
 
     <!-- Hauptinhalt -->
     <main>
-        <p style="margin-bottom: 250px; background-color: #fffdfd; color: rgb(0, 0, 0); padding: 20px; width: 94%; height: auto;">
+        <p style="margin-bottom: 250px; background-color: #dbdbdb; color: rgb(0, 0, 0); padding: 20px; width: 94%; height: auto;">
             Mit dieser Website will ich meine 
             Arbeiten, die im Laufe des ersten 
             Semesters entstanden sind, präsentieren und erklären wie sie funktionieren.
@@ -137,7 +145,6 @@
 			<img src="style.png" alt="Beschreibung deines Bildes">
 			<p>Zusammenfassend wird der gesamte Inhalt der Webseite zentriert auf der Seite dargestellt, und ein Container mit einer schwarzen Umrandung dient wahrscheinlich dazu, den Zeichenbereich (Canvas) auf der Seite visuell zu markieren. </p>
 			<div class="image-container">
-				<img src="little tools.png" alt="Beschreibung deines Bildes">
 				<img src="little tools 1.png" alt="Beschreibung deines Bildes">
 				<img src="little tools 2.png" alt="Beschreibung deines Bildes">
 			</div>
@@ -155,6 +162,12 @@
             <p>Hier kannst du deine Dokumentation für Abschnitt 3 einfügen.</p>
 			<img src="monster.png" alt="Beschreibung deines Bildes">
 			<img src="monster 2.png" alt="Beschreibung deines Bildes">
+            <img src="monster 3.png" alt="Beschreibung deines Bildes">
+        </section>
+
+        <section id="section4">
+        <h2>Fazit</h2>
+
         </section>
     </main>
 </body>
