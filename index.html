@@ -5,14 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dokumentation</title>
     <style>
+        /* Allgemeine Stile für die gesamte Seite */
         body {
-            font-family: 'Verdana', Times, serif; /* die gewünschte Schriftart angeben */
+            font-family: 'Verdana', Times, serif;
             line-height: 1.2;
-            margin: 10px;
+            margin: 0;
             padding: 0;
             background-color: #f4f4f4;
             color: #30553e;
         }
+        /* Stile für die Navigationsleiste */
+        nav {
+            background-color: #30553e;
+            padding: 5px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            color: #ffd700; /* Farbe ändern, wenn der Link hervorgehoben wird */
+        }
+        /* Stile für den Header */
         header {
             background-color: #30553e;
             color: #fff;
@@ -21,71 +46,89 @@
             display: flex;
             align-items: center;
             justify-content: flex-start;
-            width: 100%; /* Breite auf 100% setzen */
+            width: 100%;
             margin-left: -10px;
         }
         header img {
             width: 150px;
-            margin-right: 10px; /* Abstand zwischen dem Bild und der Überschrift */
+            margin-right: 10px;
         }  
         main {
             padding: 20px;
         }
         main p:first-child {
-            margin-top: 70px; /* oberen Abstand für das erste p-Element in main hinzufügen */
+            margin-top: 70px;
         }
         main img {
-            max-width: 100%; /* Maximale Breite auf 100% der Elternelementbreite setzen */
-            height: auto; /* Automatische Höhe, um das Bildverhältnis beizubehalten */
-            margin-bottom: 40px; /* Unteren Abstand zwischen den Bildern hinzufügen */
+            max-width: 90%;
+            height: auto;
+            margin-bottom: 40px;
         }
         .image-container {
-            display: flex; /* Flexbox verwenden */
-            justify-content: space-between; /* Platzierung der Elemente nebeneinander mit gleichem Abstand */
+            display: flex;
+            justify-content: space-between;
         }
         .image-container img {
-            width: 30%; /* Breite jedes Bildes auf 30% des Container setzen */
+            width: 30%;
         }
-        
+        /* Gestrichelte Linie */
+        section:not(:last-child) {
+            border-bottom: 1px dashed #30553e;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <img src="header 1.png" alt="Beschreibung des Bildes">
-    
-        <h1>Dokumentation</h1>
-    </header>
-           
-    <main>
+    <!-- Navigationsleiste -->
+    <nav>
+        <ul>
+            <li><a href="#section1">Projekt 1</a></li>
+            <li><a href="#section2">Projekt 2</a></li>
+            <li><a href="#section3">Projekt 3</a></li>
+        </ul>
+    </nav>
 
-            <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+    <!-- Header -->
+    <div style="display: flex; align-items: center;">
+        <img src="header 2.png" alt="Beschreibung des Bildes" width="100" height="auto">
+        <h1 style="margin-left: 20px;">Dokumentation</h1>
+    </div>
+
+    <!-- Hauptinhalt -->
+    <main>
+        <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+		
         <section id="section1">
             <h2>Projekt 1</h2>
             <h3>Brush Drawing Tool (little tools)</h3>
             <p>Hier kannst du deine Dokumentation für Abschnitt 1 einfügen.</p>
+			<img src="index.png" alt="Beschreibung deines Bildes">
+			<p>aaa</p>
+			<img src="sketch.png" alt="Beschreibung deines Bildes">
+			<p>aaa</p>
+			<img src="style.png" alt="Beschreibung deines Bildes">
+			<p>aaa</p>
+			<div class="image-container">
+				<img src="little tools.png" alt="Beschreibung deines Bildes">
+				<img src="little tools 1.png" alt="Beschreibung deines Bildes">
+				<img src="little tools 2.png" alt="Beschreibung deines Bildes">
+			</div>
         </section>
-        <img src="index.png" alt="Beschreibung deines Bildes">
-        <p>aaa</p>
-        <img src="sketch.png" alt="Beschreibung deines Bildes">
-        <p>aaa</p>
-        <img src="style.png" alt="Beschreibung deines Bildes">
-        <p>aaa</p>
-        <div class="image-container">
-            <img src="little tools.png" alt="Beschreibung deines Bildes">
-            <img src="little tools 1.png" alt="Beschreibung deines Bildes">
-            <img src="little tools 2.png" alt="Beschreibung deines Bildes">
-        </div>
+	
         <section id="section2">
-            <h2>Gruppenprojekt 2</h2>
+            <h2>Projekt 2</h2>
             <h3>Pain Mat(t)e</h3>
             <p>Hier kannst du deine Dokumentation für Abschnitt 2 einfügen.</p>
         </section>
+
         <section id="section3">
-            <h2>Gruppenprojekt 3</h2>
+            <h2>Projekt 3</h2>
             <h3>"My sleeping uncle"</h3>
             <p>Hier kannst du deine Dokumentation für Abschnitt 3 einfügen.</p>
+			<img src="monster.png" alt="Beschreibung deines Bildes">
+			<img src="monster 2.png" alt="Beschreibung deines Bildes">
         </section>
     </main>
 </body>
 </html>
-
